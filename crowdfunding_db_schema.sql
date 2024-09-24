@@ -1,4 +1,6 @@
-
+-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
+-- Link to schema: https://app.quickdatabasediagrams.com/#/d/UOcnex
+-- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
 -- Create Table
 -- Set table
@@ -16,7 +18,7 @@ CREATE TABLE "contacts" (
 
 CREATE TABLE "category" (
     "category_id" VARCHAR(10)   NOT NULL,
-    "category" VARCHAR(100   NOT NULL,
+    "category" VARCHAR(100)   NOT NULL,
     CONSTRAINT "pk_category" PRIMARY KEY (
         "category_id"
      )
@@ -42,7 +44,7 @@ CREATE TABLE "campaign" (
     "country" VARCHAR(100)   NOT NULL,
     "currency" VARCHAR(100)   NOT NULL,
     "launched_date" DATE   NOT NULL,
-    "end_date" Date   NOT NULL,
+    "end_date" DATE   NOT NULL,
     "category_id" VARCHAR(100)   NOT NULL,
     "subcategory_id" VARCHAR(100)   NOT NULL,
     CONSTRAINT "pk_campaign" PRIMARY KEY (
